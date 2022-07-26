@@ -253,7 +253,22 @@ form{
       margin-left: 0.5rem;
       margin-right: 0.5rem;
       font-size: 1em; }
+    
+    /* historia related items */
+    .nav-grid {
+        font-size: 1em; }
+    h1 {
+        margin-left: 5rem;
+        margin-right: 5rem; }
+    h3 {
+        margin-left: 5rem;
+        margin-right: 5rem; }
+    p {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        font-size: 1em;
     }
+}
 /* Mobile Styles */
 @media only screen and (max-width: 767px) {
     body {

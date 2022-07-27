@@ -254,6 +254,8 @@ form{
         grid-template-rows: 1fr;
         grid-column-gap: 10px;
         margin: 25px;
+        justify-items: center;
+        align-items: center;
     }
 }
 
@@ -270,6 +272,8 @@ form{
         grid-template-rows: 1fr;
         grid-row-gap: 10px;
         margin: 25px;
+        justify-items: center;
+        align-items: center;
     }
 }
 
@@ -285,6 +289,8 @@ form{
         grid-template-rows: 1fr 1fr 1fr;
         grid-row-gap: 10px;
         margin: 25px;
+        justify-items: center;
+        align-items: center;
     }
     #img1{
         grid-column: 1/2;
@@ -320,6 +326,8 @@ form{
     .galeria{
         display: grid;
         margin-left: 30px;
+        justify-items: center;
+        align-items: center;
     }
 }
     

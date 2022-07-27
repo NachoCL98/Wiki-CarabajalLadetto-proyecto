@@ -94,6 +94,7 @@ body{
     margin-top: 0px;
     margin-bottom: 0px;
     border-style: none;
+    box-sizing: border-box;
 }
 .nav-grid{
     display: grid;

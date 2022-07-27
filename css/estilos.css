@@ -159,59 +159,65 @@ section p{
 .galeria{
     margin: 25px;
 }
-#img1{
-    transform: scale(1,1);
-}
 #img1:hover{
+    transform: scale(1.05);
+    transition: 0.7s;
+    box-shadow: 2px 2px 5px #333;
     border: 1px solid #ddd;
     width: 450px;
     height: 275px;
     border-radius: 8px;
-}
-#img2{
-    transform: scale(1,1);
+    padding: 10px;
 }
 #img2:hover{
+    transform: scale(1.05);
+    transition: 0.7s;
+    box-shadow: 2px 2px 5px #333;
     border: 1px solid #ddd;
     width: 450px;
     height: 275px;
     border-radius: 8px;
-}
-#img3{
-    transform: scale(1,1);
+    padding: 10px;
 }
 #img3:hover{
+    transform: scale(1.05);
+    transition: 0.7s;
+    box-shadow: 2px 2px 5px #333;
     border: 1px solid #ddd;
     width: 450px;
     height: 275px;
     border-radius: 8px;
-}
-#img4{
-    transform: scale(1,1);
+    padding: 10px;
 }
 #img4:hover{
+    transform: scale(1.05);
+    transition: 0.7s;
+    box-shadow: 2px 2px 5px #333;
     border: 1px solid #ddd;
     width: 450px;
     height: 275px;
     border-radius: 8px;
-}
-#img5{
-    transform: scale(1,1);
+    padding: 10px;
 }
 #img5:hover{
+    transform: scale(1.05);
+    transition: 0.7s;
+    box-shadow: 2px 2px 5px #333;
     border: 1px solid #ddd;
     width: 450px;
     height: 275px;
     border-radius: 8px;
-}
-#img6{
-    transform: scale(1,1);
+    padding: 10px;
 }
 #img6:hover{
+    transform: scale(1.05);
+    transition: 0.7s;
+    box-shadow: 2px 2px 5px #333;
     border: 1px solid #ddd;
     width: 450px;
     height: 275px;
     border-radius: 8px;
+    padding: 10px;
 }
 body h6{
     text-align: center;

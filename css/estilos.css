@@ -242,6 +242,12 @@ form{
     .body{
         display: grid;
         grid-template-columns: 1fr;
+        box-sizing: border-box;
+    }
+    .galeria{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
     }
 }
 
@@ -249,6 +255,12 @@ form{
     .body{
         display: grid;
         grid-template-columns: 1fr;
+        box-sizing: border-box;
+    }
+    .galeria{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
     }
 }
 
@@ -256,6 +268,7 @@ form{
     .body{
         display: grid;
         grid-template-columns: 1fr;
+        box-sizing: border-box;
     }
 }
     

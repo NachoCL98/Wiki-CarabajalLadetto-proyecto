@@ -238,60 +238,24 @@ form{
     text-align: center;
 }
 
-@media screen and (max-width: 480px) {
-    /* index related items */
-    .nav-grid {
-      font-size: 1em; }
-    h1 {
-      margin-left: 5rem;
-      margin-right: 5rem; }
-    h3 {
-      margin-left: 5rem;  
-      margin-right: 5rem;
-    }
-    p {
-      margin-left: 0.5rem;
-      margin-right: 0.5rem;
-      font-size: 1em; }
-    
-    /* historia related items */
-    .nav-grid {
-        font-size: 1em; }
-    h1 {
-        margin-left: 5rem;
-        margin-right: 5rem; }
-    h3 {
-        margin-left: 5rem;
-        margin-right: 5rem; }
-    p {
-        margin-left: 0.5rem;
-        margin-right: 0.5rem;
-        font-size: 1em;
+@media only screen and (min-width: 265px) and (max-width: 719px) {
+    .body{
+        display: grid;
+        grid-template-columns: 1fr;
     }
 }
-/* Mobile Styles */
-@media only screen and (max-width: 767px) {
-    body {
-      background-color: #F09A9D; /* Red */
+
+@media only screen and (min-width: 720px) and (max-width: 896px) {
+    .body{
+        display: grid;
+        grid-template-columns: 1fr;
     }
-    header {
-        background-size: cover;
-        font-size: 60px;
+}
+
+@media only screen and (min-width: 897px) {
+    .body{
+        display: grid;
+        grid-template-columns: 1fr;
     }
-    ul {
-        font-size: 20px;
-    }
-  }
-  /* Tablet Styles */
-  @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    body {
-      background-color: #F5CF8E; /* Yellow */
-    }
-  }
-  /* Desktop Styles */
-  @media only screen and (min-width: 1024px) {
-    body {
-      background-color: #B2D6FF; /* Blue */
-    }
-  }
+}
     

@@ -47,36 +47,11 @@ header{
         12px 12px 24px 0px rgba(232, 126, 29, 1);
     }
     
-        #nav1{
+        #nav1:hover, #nav2:hover, #nav3:hover, #nav4:hover, #nav5:hover{
             transition: height 2.7s;
-        }
-        #nav1:hover{
             height: 50px;
         }
-        #nav2{
-            transition: height 2.7s;
-        }
-        #nav2:hover{
-            height: 50px;
-        }
-        #nav3{
-            transition: height 2.7s;
-        }
-        #nav3:hover{
-            height: 50px;
-        }
-        #nav4{
-            transition: height 2.7s;
-        }
-        #nav4:hover{
-            height: 50px;
-        }
-        #nav5{
-            transition: height 2.7s
-        }
-        #nav5:hover{
-            height: 50px;
-        }
+        
         a:visited{text-decoration: none; color: $color1;} a{text-decoration: none; color: $color1;}
 
         .nav-grid{
@@ -163,11 +138,17 @@ body{
         align-content: center;
     }
 
+    @mixin sizes($width, $height) {
+        height: $height;
+        width: $width;
+    }
+        
     .galeria{
+        @include sizes(400px, 250px);
         margin: 25px;
     }
 
-        #img1:hover{
+        #img1:hover, #img2:hover, #img3:hover, #img4:hover, #img5:hover, #img6:hover{
             transform: scale(1.05);
             transition: 0.7s;
             box-shadow: 2px 2px 5px #333;
@@ -177,56 +158,26 @@ body{
             border-radius: 8px;
             padding: 10px;
         }
-        #img2:hover{
-            transform: scale(1.05);
-            transition: 0.7s;
-            box-shadow: 2px 2px 5px #333;
-            border: 1px solid #ddd;
-            width: 450px;
-            height: 275px;
-            border-radius: 8px;
-            padding: 10px;
-        }
-        #img3:hover{
-            transform: scale(1.05);
-            transition: 0.7s;
-            box-shadow: 2px 2px 5px #333;
-            border: 1px solid #ddd;
-            width: 450px;
-            height: 275px;
-            border-radius: 8px;
-            padding: 10px;
-        }
-        #img4:hover{
-            transform: scale(1.05);
-            transition: 0.7s;
-            box-shadow: 2px 2px 5px #333;
-            border: 1px solid #ddd;
-            width: 450px;
-            height: 275px;
-            border-radius: 8px;
-            padding: 10px;
-        }
-        #img5:hover{
-            transform: scale(1.05);
-            transition: 0.7s;
-            box-shadow: 2px 2px 5px #333;
-            border: 1px solid #ddd;
-            width: 450px;
-            height: 275px;
-            border-radius: 8px;
-            padding: 10px;
-        }
-        #img6:hover{
-            transform: scale(1.05);
-            transition: 0.7s;
-            box-shadow: 2px 2px 5px #333;
-            border: 1px solid #ddd;
-            width: 450px;
-            height: 275px;
-            border-radius: 8px;
-            padding: 10px;
-        }
+
+    .form{
+        color: aliceblue;
+        height: auto;
+        width: 100vh;
+        border-radius: 7px;
+        display: flex;
+        justify-content: center;
+    }
+
+    fieldset {
+        background-color: transparent;
+        border-color: transparent;
+    }
+
+    //extend
+    .submit{
+    @extend .submit;
+    margin-bottom: 20px;
+    }
 
     footer{
         background-color: $color2;
@@ -244,11 +195,6 @@ body{
             text-align: center;
         }
     }
-
-    form{
-        text-align: center;
-    }
- 
 }
 
 @media only screen and (min-width: 265px) and (max-width: 719px) {
@@ -260,10 +206,10 @@ body{
     .galeria{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-column-gap: 10px;
+        grid-column-gap: 5px;
         grid-template-rows: 1fr;
-        grid-column-gap: 10px;
-        margin: 25px;
+        grid-column-gap: 5px;
+        margin: 15px;
         justify-items: center;
         align-items: center;
     }
@@ -277,10 +223,10 @@ body{
     .galeria{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-column-gap: 10px;
+        grid-column-gap: 5px;
         grid-template-rows: 1fr;
-        grid-row-gap: 10px;
-        margin: 25px;
+        grid-row-gap: 5px;
+        margin: 15px;
         justify-items: center;
         align-items: center;
     }

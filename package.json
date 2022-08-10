@@ -1,0 +1,23 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "package.json file for my project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NachoCL98/proyecto.git"
+  },
+  "author": "Ignacio Carabajal Ladetto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NachoCL98/proyecto/issues"
+  },
+  "homepage": "https://github.com/NachoCL98/proyecto#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}

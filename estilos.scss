@@ -202,6 +202,7 @@ body{
 
 @media only screen and (min-width: 265px) and (max-width: 719px) {
     .body{
+        display: grid;
         box-sizing: border-box;
     }
         h1{
@@ -209,6 +210,7 @@ body{
         }
         .galeria{
             margin: 25px;
+            grid-row-gap: 10px;
             justify-items: center;
             align-items: center;
         }

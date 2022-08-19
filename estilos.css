@@ -8,16 +8,16 @@
 
 header {
   background-image: url(../multimedia/Virology_LadyDi-1920x1024.jpg);
-  width: 100%;
-  height: 100%;
+  width: auto;
+  height: auto;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0px;
-  padding: 30px;
-  border-style: double;
+  padding: 0px;
 }
 header .header-grid {
+  display: grid;
   box-sizing: border-box;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: 1fr;
@@ -30,19 +30,27 @@ header h1 {
   font-size: 100px;
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  padding: 10px;
+  padding: 50px;
   text-shadow: 0 2px 0 white;
 }
-header ul {
-  text-shadow: 0 2px 0 white;
+header .nav-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  justify-items: center;
+  position: relative;
+  list-style: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
   border: 0px none rgba(100, 100, 100, 0);
-  border-radius: 60px;
-  background-color: rgb(255, 254, 0);
-  box-shadow: inset 4px 14px 18px 0px rgb(232, 126, 29), inset -4px -18px 18px 0px rgb(232, 126, 29), 12px 12px 24px 0px rgb(232, 126, 29);
+  border-radius: 75px;
+  background-color: rgb(165, 166, 246);
+  box-shadow: inset -1px -1px 20px 0px rgba(0, 0, 0, 0.23), inset 1px 1px 24px 0px rgba(125, 125, 237, 0.6);
 }
 header #nav1:hover, header #nav2:hover, header #nav3:hover, header #nav4:hover, header #nav5:hover {
-  transition: height 2.7s;
-  height: 50px;
+  text-transform: uppercase;
+  text-shadow: 0 0 15px #8e54e9;
+  transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 header a:visited {
   text-decoration: none;
@@ -51,13 +59,6 @@ header a:visited {
 header a {
   text-decoration: none;
   color: #883000;
-}
-header .nav-grid {
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 1fr;
-  justify-items: center;
-  position: relative;
-  list-style: none;
 }
 
 body {
@@ -76,11 +77,8 @@ body h3 {
   word-spacing: 7px;
   text-align: center;
   text-decoration: underline;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  margin-left: 60px;
-  margin-right: 60px;
-  padding: 30px;
+  margin: auto;
+  padding: auto;
 }
 body h6 {
   text-align: center;
@@ -90,6 +88,7 @@ body h6 {
   padding-left: 30px;
 }
 body .subtitle-grid {
+  display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: 1fr;
   justify-items: center;
@@ -103,9 +102,8 @@ body p {
   line-height: 28px;
   text-align: center;
   text-align: justify;
-  margin-left: 150px;
-  margin-right: 150px;
-  padding: 5px;
+  margin: auto;
+  padding: auto;
 }
 body section p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -121,17 +119,19 @@ body section p {
   padding: 10px;
 }
 body .indexp-grid {
+  display: block;
   justify-content: center;
   align-content: center;
 }
 body .historiap-grid {
+  display: grid;
   justify-content: center;
   align-content: center;
 }
 body .galeria {
   height: 250px;
   width: 400px;
-  margin: 25px;
+  margin: 20px;
 }
 body #img1:hover, body #img2:hover, body #img3:hover, body #img4:hover, body #img5:hover, body #img6:hover {
   transform: scale(1.05);
@@ -142,6 +142,7 @@ body #img1:hover, body #img2:hover, body #img3:hover, body #img4:hover, body #im
   height: 275px;
   border-radius: 8px;
   padding: 10px;
+  vertical-align: none;
 }
 body .form {
   color: aliceblue;
@@ -178,11 +179,17 @@ body footer h2 {
     display: grid;
     box-sizing: border-box;
   }
-  h1 {
+  .header-grid {
     font-size: 50px;
   }
+  .subtitle-grid {
+    padding: 40px;
+    margin: 20px;
+  }
   .galeria {
-    margin: 25px;
+    margin-left: 10px;
+    display: grid;
+    grid-column-gap: 20px;
     grid-row-gap: 10px;
     justify-items: center;
     align-items: center;
@@ -190,9 +197,20 @@ body footer h2 {
 }
 @media only screen and (min-width: 720px) and (max-width: 896px) {
   .body {
+    display: grid;
     box-sizing: border-box;
   }
+  .header-grid {
+    font-size: 50px;
+  }
+  .subtitle-grid {
+    padding: 40px;
+    margin: 20px;
+  }
   .galeria {
+    display: grid;
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
     margin-left: 30px;
     justify-items: center;
     align-items: center;
@@ -200,9 +218,20 @@ body footer h2 {
 }
 @media only screen and (min-width: 897px) and (max-width: 1263px) {
   .body {
+    display: grid;
     box-sizing: border-box;
   }
+  .header-grid {
+    font-size: 75px;
+  }
+  .subtitle-grid {
+    padding: 40px;
+    margin: 20px;
+  }
   .galeria {
+    display: grid;
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
     margin: 25px;
     justify-items: center;
     align-items: center;
@@ -210,9 +239,20 @@ body footer h2 {
 }
 @media only screen and (min-width: 1264px) {
   .body {
+    display: grid;
     box-sizing: border-box;
   }
+  .header-grid {
+    font-size: 100px;
+  }
+  .subtitle-grid {
+    padding: 40px;
+    margin: 20px;
+  }
   .galeria {
+    display: grid;
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
     margin-left: 30px;
     justify-items: center;
     align-items: center;

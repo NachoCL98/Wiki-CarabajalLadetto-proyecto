@@ -94,23 +94,12 @@ body .subtitle-grid {
   justify-items: center;
   position: relative;
 }
-body p {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 24px;
-  letter-spacing: 2px;
-  word-spacing: 5px;
-  line-height: 28px;
-  text-align: center;
-  text-align: justify;
-  margin: auto;
-  padding: auto;
-}
 body section p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 24px;
   letter-spacing: 2px;
   word-spacing: 2px;
-  line-height: 42px;
+  line-height: 28px;
   text-align: center;
   text-align: justify;
   margin-left: 100px;
@@ -156,9 +145,6 @@ body fieldset {
   background-color: transparent;
   border-color: transparent;
 }
-body .submit {
-  margin-bottom: 20px;
-}
 body footer {
   background-color: #311432;
   padding: 30px;
@@ -175,27 +161,171 @@ body footer h2 {
 }
 
 @media only screen and (min-width: 265px) and (max-width: 719px) {
+  body {
+    background-image: url(../multimedia/backgroundv2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-style: none;
+  }
   .body {
     display: grid;
     box-sizing: border-box;
   }
-  .header-grid {
+  header {
+    background-image: url(../multimedia/Virology_LadyDi-1920x1024.jpg);
+    width: auto;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px;
+    padding: 0px;
+  }
+  header .header-grid {
+    display: grid;
+    box-sizing: border-box;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-content: center;
+    position: relative;
     font-size: 50px;
+  }
+  header h1 {
+    color: #883000;
+    font-size: 100px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 50px;
+    text-shadow: 0 2px 0 white;
+  }
+  header .nav-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    justify-items: center;
+    position: relative;
+    list-style: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    border: 0px none rgba(100, 100, 100, 0);
+    border-radius: 75px;
+    background-color: rgb(165, 166, 246);
+    box-shadow: inset -1px -1px 20px 0px rgba(0, 0, 0, 0.23), inset 1px 1px 24px 0px rgba(125, 125, 237, 0.6);
+  }
+  header #nav1:hover, header #nav2:hover, header #nav3:hover, header #nav4:hover, header #nav5:hover {
+    text-transform: uppercase;
+    text-shadow: 0 0 15px #8e54e9;
+    transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  header a:visited {
+    text-decoration: none;
+    color: #883000;
+  }
+  header a {
+    text-decoration: none;
+    color: #883000;
+  }
+  h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 32px;
+    letter-spacing: 2px;
+    word-spacing: 7px;
+    text-align: center;
+    text-decoration: underline;
   }
   .subtitle-grid {
     padding: 40px;
     margin: 20px;
   }
+  h6 {
+    text-align: center;
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+  }
+  section p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    line-height: 28px;
+    text-align: center;
+    text-align: justify;
+    margin: 25px;
+    padding: 10px;
+  }
+  .indexp-grid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+  }
+  .historiap-grid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+  }
+  .produccionp-grid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+  }
+  .contactop-grid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+  }
   .galeria {
-    margin-left: 10px;
+    height: 200px;
+    width: 300px;
+    margin: 20px;
     display: grid;
     grid-column-gap: 20px;
     grid-row-gap: 10px;
     justify-items: center;
     align-items: center;
   }
+  .form {
+    color: aliceblue;
+    height: auto;
+    width: 100vh;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+  }
+  fieldset {
+    background-color: transparent;
+    border-color: transparent;
+  }
+  footer {
+    background-color: #311432;
+    padding: 30px;
+  }
+  p {
+    color: #000;
+    font-size: 20px;
+    text-align: center;
+    margin: 10px;
+  }
+  h2 {
+    margin: 10px;
+    text-align: center;
+  }
 }
 @media only screen and (min-width: 720px) and (max-width: 896px) {
+  body {
+    background-image: url(../multimedia/backgroundv2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-style: none;
+  }
   .body {
     display: grid;
     box-sizing: border-box;
@@ -217,6 +347,15 @@ body footer h2 {
   }
 }
 @media only screen and (min-width: 897px) and (max-width: 1263px) {
+  body {
+    background-image: url(../multimedia/backgroundv2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-style: none;
+  }
   .body {
     display: grid;
     box-sizing: border-box;
@@ -238,6 +377,15 @@ body footer h2 {
   }
 }
 @media only screen and (min-width: 1264px) {
+  body {
+    background-image: url(../multimedia/backgroundv2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-style: none;
+  }
   .body {
     display: grid;
     box-sizing: border-box;

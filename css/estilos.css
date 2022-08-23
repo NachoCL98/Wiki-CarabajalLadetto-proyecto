@@ -3,7 +3,7 @@
 }
 
 header {
-  background-image: url(../multimedia/Virology_LadyDi-1920x1024.jpg);
+  background-image: url(./multimedia/Virology_LadyDi-1920x1024.jpg);
   width: 100%;
   height: 100%;
   background-position: center;
@@ -84,7 +84,7 @@ header .nav-grid {
 }
 
 body {
-  background-image: url(../multimedia/backgroundv2.jpg);
+  background-image: url(./multimedia/backgroundv2.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

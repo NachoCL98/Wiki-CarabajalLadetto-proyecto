@@ -6,8 +6,17 @@
   box-sizing: border-box;
 }
 
-header {
-  background-image: url(../multimedia/Virology_LadyDi-1920x1024.jpg);
+body {
+  background-image: url(../multimedia/backgroundv2.jpg) !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border-style: none;
+}
+body header {
+  background-image: url(../multimedia/Virology_LadyDi-1920x1024.jpg) !important;
   width: auto;
   height: auto;
   background-position: center;
@@ -16,7 +25,15 @@ header {
   margin: 0px;
   padding: 0px;
 }
-header .header-grid {
+body header h1 {
+  color: #883000;
+  font-size: 100px;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 50px;
+  text-shadow: 0 2px 0 white;
+}
+body header h1 .header-grid {
   display: grid;
   box-sizing: border-box;
   grid-template-columns: repeat(1, 1fr);
@@ -25,15 +42,7 @@ header .header-grid {
   align-content: center;
   position: relative;
 }
-header h1 {
-  color: #883000;
-  font-size: 100px;
-  text-align: center;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  padding: 50px;
-  text-shadow: 0 2px 0 white;
-}
-header .nav-grid {
+body header .nav-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 1fr;
@@ -47,28 +56,18 @@ header .nav-grid {
   background-color: rgb(165, 166, 246);
   box-shadow: inset -1px -1px 20px 0px rgba(0, 0, 0, 0.23), inset 1px 1px 24px 0px rgba(125, 125, 237, 0.6);
 }
-header #nav1:hover, header #nav2:hover, header #nav3:hover, header #nav4:hover, header #nav5:hover {
+body header #nav1:hover, body header #nav2:hover, body header #nav3:hover, body header #nav4:hover, body header #nav5:hover {
   text-transform: uppercase;
   text-shadow: 0 0 15px #8e54e9;
   transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-header a:visited {
+body header a:visited {
   text-decoration: none;
   color: #883000;
 }
-header a {
+body header a {
   text-decoration: none;
   color: #883000;
-}
-
-body {
-  background-image: url(../multimedia/backgroundv2.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  border-style: none;
 }
 body h3 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -80,19 +79,19 @@ body h3 {
   margin: auto;
   padding: auto;
 }
+body h3 .subtitle-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: 1fr;
+  justify-items: center;
+  position: relative;
+}
 body h6 {
   text-align: center;
   padding-top: 30px;
   padding-right: 30px;
   padding-bottom: 30px;
   padding-left: 30px;
-}
-body .subtitle-grid {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: 1fr;
-  justify-items: center;
-  position: relative;
 }
 body section p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -102,17 +101,25 @@ body section p {
   line-height: 28px;
   text-align: center;
   text-align: justify;
-  margin-left: 100px;
-  margin-right: 100px;
-  margin-bottom: 50px;
+  margin: 100px;
   padding: 10px;
 }
-body .indexp-grid {
+body section p .indexp-grid {
   display: block;
   justify-content: center;
   align-content: center;
 }
-body .historiap-grid {
+body section p .historiap-grid {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+body section p .produccionp-grid {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+body section p .contactop-grid {
   display: grid;
   justify-content: center;
   align-content: center;
@@ -161,30 +168,19 @@ body footer h2 {
 }
 
 @media only screen and (min-width: 265px) and (max-width: 719px) {
-  body {
-    background-image: url(../multimedia/backgroundv2.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    border-style: none;
-  }
   .body {
     display: grid;
     box-sizing: border-box;
   }
-  header {
-    background-image: url(../multimedia/Virology_LadyDi-1920x1024.jpg);
-    width: auto;
-    height: auto;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0px;
-    padding: 0px;
+  h1 {
+    color: #883000;
+    font-size: 100px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 50px;
+    text-shadow: 0 2px 0 white;
   }
-  header .header-grid {
+  .header-grid {
     display: grid;
     box-sizing: border-box;
     grid-template-columns: repeat(1, 1fr);
@@ -194,50 +190,8 @@ body footer h2 {
     position: relative;
     font-size: 50px;
   }
-  header h1 {
-    color: #883000;
-    font-size: 100px;
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 50px;
-    text-shadow: 0 2px 0 white;
-  }
-  header .nav-grid {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 1fr;
-    justify-items: center;
-    position: relative;
-    list-style: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: white;
-    border: 0px none rgba(100, 100, 100, 0);
-    border-radius: 75px;
-    background-color: rgb(165, 166, 246);
-    box-shadow: inset -1px -1px 20px 0px rgba(0, 0, 0, 0.23), inset 1px 1px 24px 0px rgba(125, 125, 237, 0.6);
-  }
-  header #nav1:hover, header #nav2:hover, header #nav3:hover, header #nav4:hover, header #nav5:hover {
-    text-transform: uppercase;
-    text-shadow: 0 0 15px #8e54e9;
-    transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
-  }
-  header a:visited {
-    text-decoration: none;
-    color: #883000;
-  }
-  header a {
-    text-decoration: none;
-    color: #883000;
-  }
-  h3 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 32px;
-    letter-spacing: 2px;
-    word-spacing: 7px;
-    text-align: center;
-    text-decoration: underline;
-  }
   .subtitle-grid {
+    display: grid;
     padding: 40px;
     margin: 20px;
   }
@@ -317,15 +271,6 @@ body footer h2 {
   }
 }
 @media only screen and (min-width: 720px) and (max-width: 896px) {
-  body {
-    background-image: url(../multimedia/backgroundv2.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    border-style: none;
-  }
   .body {
     display: grid;
     box-sizing: border-box;
@@ -347,15 +292,6 @@ body footer h2 {
   }
 }
 @media only screen and (min-width: 897px) and (max-width: 1263px) {
-  body {
-    background-image: url(../multimedia/backgroundv2.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    border-style: none;
-  }
   .body {
     display: grid;
     box-sizing: border-box;
@@ -377,15 +313,6 @@ body footer h2 {
   }
 }
 @media only screen and (min-width: 1264px) {
-  body {
-    background-image: url(../multimedia/backgroundv2.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    border-style: none;
-  }
   .body {
     display: grid;
     box-sizing: border-box;

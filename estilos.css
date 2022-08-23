@@ -7,7 +7,7 @@
 }
 
 body {
-  background-image: url(../multimedia/backgroundv2.jpg) !important;
+  background-image: url(multimedia/backgroundv2.jpg) !important;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -16,7 +16,7 @@ body {
   border-style: none;
 }
 body header {
-  background-image: url(../multimedia/Virology_LadyDi-1920x1024.jpg) !important;
+  background-image: url(multimedia/Virology_LadyDi-1920x1024.jpg) !important;
   width: auto;
   height: auto;
   background-position: center;
@@ -76,8 +76,8 @@ body h3 {
   word-spacing: 7px;
   text-align: center;
   text-decoration: underline;
-  margin: auto;
-  padding: auto;
+  margin: 25px;
+  padding: 10px;
 }
 body h3 .subtitle-grid {
   display: grid;

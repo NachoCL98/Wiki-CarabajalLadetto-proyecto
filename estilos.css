@@ -83,11 +83,6 @@ body h3 .subtitle-grid {
   justify-items: center;
   position: relative;
 }
-body h6 {
-  text-align: center;
-  padding: 30px;
-  margin: 10px;
-}
 body .marquee {
   display: grid;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -294,15 +289,6 @@ body footer h2 {
     padding: 30px;
     margin: 10px;
   }
-  .foto-produccion {
-    height: 500px;
-    width: 350px;
-    display: grid;
-    margin: 10px;
-    padding: 20px;
-    justify-content: center;
-    align-content: center;
-  }
   section p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 24px;
@@ -318,23 +304,35 @@ body footer h2 {
     display: grid;
     justify-content: center;
     align-content: center;
+    font-size: 16px;
   }
   .historiap-grid {
     display: grid;
     justify-content: center;
     align-content: center;
+    font-size: 16px;
   }
   .produccionp-grid {
     display: grid;
     justify-content: center;
     align-content: center;
+    font-size: 16px;
     margin: 20px;
-    padding: 75px;
+    padding: 20px;
   }
   .contactop-grid {
     display: grid;
     justify-content: center;
     align-content: center;
+    font-size: 16px;
+  }
+  .marquee {
+    display: grid;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 36px;
+    margin-top: 20px;
+    color: #883000;
+    text-shadow: 0 4px 0 white;
   }
   .videos {
     display: grid;
@@ -380,6 +378,14 @@ body footer h2 {
     padding: 40px;
     margin: 20px;
   }
+  .marquee {
+    display: grid;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 36px;
+    margin-top: 20px;
+    color: #883000;
+    text-shadow: 0 4px 0 white;
+  }
   .galeria {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -402,6 +408,14 @@ body footer h2 {
   .subtitle-grid {
     padding: 40px;
     margin: 20px;
+  }
+  .marquee {
+    display: grid;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 36px;
+    margin-top: 20px;
+    color: #883000;
+    text-shadow: 0 4px 0 white;
   }
   .galeria {
     display: grid;
@@ -440,6 +454,14 @@ body footer h2 {
   }
   .indexp-grid {
     margin-top: 10px;
+  }
+  .marquee {
+    display: grid;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 36px;
+    margin-top: 20px;
+    color: #883000;
+    text-shadow: 0 4px 0 white;
   }
   .galeria {
     display: grid;

@@ -1,7 +1,5 @@
 * {
   margin: 0px;
-  margin-right: 0px;
-  margin-left: 0px;
   padding: 0px;
   box-sizing: border-box;
 }
@@ -11,8 +9,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin: 0px;
   border-style: none;
 }
 body header {
@@ -31,7 +28,7 @@ body header h1 {
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding: 50px;
-  text-shadow: 0 2px 0 white;
+  text-shadow: 0 6px 0 white;
 }
 body header h1 .header-grid {
   display: grid;
@@ -88,10 +85,123 @@ body h3 .subtitle-grid {
 }
 body h6 {
   text-align: center;
-  padding-top: 30px;
-  padding-right: 30px;
-  padding-bottom: 30px;
-  padding-left: 30px;
+  padding: 30px;
+  margin: 10px;
+}
+body .marquee {
+  display: grid;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 36px;
+  margin-top: 20px;
+  color: #883000;
+  text-shadow: 0 4px 0 white;
+}
+body .galeria {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+}
+body .item {
+  height: 200px;
+  border: 2px solid #000;
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 2px 2px 5px #333;
+}
+body .item:hover {
+  transform: scale(1.05);
+  transition: all 0.7s;
+}
+body .item1 {
+  background-image: url(./multimedia/ladydimitrescu1.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+body .item2 {
+  background-image: url(./multimedia/ladydimitrescu2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+body .item3 {
+  background-image: url(./multimedia/ladydimitrescu3.jpg);
+  background-size: cover;
+  background-position: center;
+}
+body .item4 {
+  background-image: url(./multimedia/ladydimitrescu4.png);
+  background-size: cover;
+  background-position: center;
+}
+body .item5 {
+  background-image: url(./multimedia/Lady-Dimitrescu-Villana-1-1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+body .item6 {
+  background-image: url(./multimedia/dimitrescumutacion1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+body .item7 {
+  background-image: url(./multimedia/dimitrescumutacion2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+body .item8 {
+  background-image: url(./multimedia/maxresdefault.jpg);
+  background-size: cover;
+  background-position: center;
+}
+body .videos {
+  width: 75%;
+  height: auto;
+  margin: 20px;
+  padding: 10px;
+}
+body .video1 {
+  padding: 10px;
+  background-size: cover;
+  background-position: center;
+}
+body .video2 {
+  padding: 10px;
+  background-size: cover;
+  background-position: center;
+}
+body .video3 {
+  padding: 10px;
+  background-size: cover;
+  background-position: center;
+}
+body .video4 {
+  padding: 10px;
+  background-size: cover;
+  background-position: center;
+}
+body .video5 {
+  padding: 10px;
+  background-size: cover;
+  background-position: center;
+}
+body .video6 {
+  padding: 10px;
+  background-size: cover;
+  background-position: center;
+}
+body .video7 {
+  padding: 10px;
+  background-size: cover;
+  background-position: center;
+}
+body .video8 {
+  padding: 10px;
+  background-size: cover;
+  background-position: center;
+}
+body .video9 {
+  padding: 10px;
+  background-size: cover;
+  background-position: center;
 }
 body section p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -101,8 +211,8 @@ body section p {
   line-height: 28px;
   text-align: center;
   text-align: justify;
-  margin: 100px;
-  padding: 10px;
+  margin: 20px;
+  padding: 20px;
 }
 body section p .indexp-grid {
   display: block;
@@ -124,26 +234,9 @@ body section p .contactop-grid {
   justify-content: center;
   align-content: center;
 }
-body .galeria {
-  height: 250px;
-  width: 400px;
-  margin: 20px;
-}
-body #img1:hover, body #img2:hover, body #img3:hover, body #img4:hover, body #img5:hover, body #img6:hover {
-  transform: scale(1.05);
-  transition: 0.7s;
-  box-shadow: 2px 2px 5px #333;
-  border: 1px solid #ddd;
-  width: 450px;
-  height: 275px;
-  border-radius: 8px;
-  padding: 10px;
-  vertical-align: none;
-}
 body .form {
   color: aliceblue;
   height: auto;
-  width: 100vh;
   border-radius: 7px;
   display: flex;
   justify-content: center;
@@ -171,6 +264,7 @@ body footer h2 {
   .body {
     display: grid;
     box-sizing: border-box;
+    align-content: center;
   }
   h1 {
     color: #883000;
@@ -197,10 +291,17 @@ body footer h2 {
   }
   h6 {
     text-align: center;
-    padding-top: 30px;
-    padding-right: 30px;
-    padding-bottom: 30px;
-    padding-left: 30px;
+    padding: 30px;
+    margin: 10px;
+  }
+  .foto-produccion {
+    height: 500px;
+    width: 350px;
+    display: grid;
+    margin: 10px;
+    padding: 20px;
+    justify-content: center;
+    align-content: center;
   }
   section p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -227,33 +328,30 @@ body footer h2 {
     display: grid;
     justify-content: center;
     align-content: center;
+    margin: 20px;
+    padding: 75px;
   }
   .contactop-grid {
     display: grid;
     justify-content: center;
     align-content: center;
   }
-  .galeria {
-    height: 200px;
-    width: 300px;
-    margin: 20px;
+  .videos {
     display: grid;
-    grid-column-gap: 20px;
-    grid-row-gap: 10px;
-    justify-items: center;
-    align-items: center;
+    grid-template-columns: 1fr;
+    width: 400px;
+    height: 250px;
   }
   .form {
     color: aliceblue;
     height: auto;
-    width: 100vh;
     border-radius: 7px;
     display: flex;
     justify-content: center;
   }
   fieldset {
-    background-color: transparent;
-    border-color: transparent;
+    background-color: aliceblue;
+    border-color: aliceblue;
   }
   footer {
     background-color: #311432;
@@ -284,11 +382,13 @@ body footer h2 {
   }
   .galeria {
     display: grid;
-    grid-column-gap: 20px;
-    grid-row-gap: 10px;
-    margin-left: 30px;
-    justify-items: center;
-    align-items: center;
+    grid-template-columns: 1fr 1fr;
+  }
+  .videos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 400px;
+    height: 250px;
   }
 }
 @media only screen and (min-width: 897px) and (max-width: 1263px) {
@@ -305,11 +405,23 @@ body footer h2 {
   }
   .galeria {
     display: grid;
-    grid-column-gap: 20px;
-    grid-row-gap: 10px;
-    margin: 25px;
-    justify-items: center;
-    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .item8 {
+    grid-column: 2/4;
+    grid-row: 3/4;
+  }
+  .videos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 500px;
+    height: 350px;
+  }
+  .video1, .video3, .video5, .video7, .video9 {
+    grid-column: 2/3;
+  }
+  .video2, .video4, .video6, .video8 {
+    grid-column: 3/4;
   }
 }
 @media only screen and (min-width: 1264px) {
@@ -319,17 +431,33 @@ body footer h2 {
   }
   .header-grid {
     font-size: 100px;
+    padding: 50px;
+    margin: 50px;
   }
   .subtitle-grid {
-    padding: 40px;
-    margin: 20px;
+    padding: 20px;
+    margin-top: 80px;
+  }
+  .indexp-grid {
+    margin-top: 10px;
   }
   .galeria {
     display: grid;
-    grid-column-gap: 20px;
-    grid-row-gap: 10px;
-    margin-left: 30px;
-    justify-items: center;
-    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .videos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 500px;
+    height: 350px;
+  }
+  .video1, .video4, .video7 {
+    grid-column: 2/3;
+  }
+  .video2, .video5, .video8 {
+    grid-column: 4/5;
+  }
+  .video3, .video6, .video9 {
+    grid-column: 6/7;
   }
 }/*# sourceMappingURL=estilos.css.map */
